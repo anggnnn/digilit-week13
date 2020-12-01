@@ -1,0 +1,200 @@
+* {
+	/* that selector is used for select all elements, in here I used for making a border box on my CV */
+    box-sizing: border-box;
+}
+
+.row::after {
+	/*This selector is to insert content after every class row element and style the inserted content. */
+    content: "";
+    clear: both;
+    display: block;
+}
+
+[class*="col-"] {
+	/*This is to decorate or to arrange the <div class="col in my html. */
+    float: left;
+    padding: 15px;
+}
+
+
+[class*="col-"] {
+	/*This is to decorate or to arrange the <div class="col in my html but for mobile phones. */
+    width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+	/* This is to declarate apply different styles for different media types or devices. Below, this is for tablets device. */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+	/* This is to declarate apply different styles for different media types or devices. Below, this is for laptops device. */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+body {
+	/*This selector is for declarate the body's element. Also to decore it. In here, I used font-family, padding, and background color(rgba-red, green, blue, alpha. Alpha here represent alpha channels.) */
+    font-family: Arial;
+    padding: 10px;
+    background-color: rgba(255, 230, 148, 0.333);
+}
+
+.white {
+	/*This selector is for declarate the background color of my <div class="col-m-12 col-12". */
+    background-color: white;
+}
+
+.rounded {
+	/*This selector is for my image that appear in html page. */
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 20px;
+}
+
+.boxborder {
+	/* This selectro is to decorate the img=pict.jpeg. */
+    border-color: #f8aeae;
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    padding: 20px;
+}
+
+.text1 {
+	/*This selector is for <div class="boxborder text1". Text 1 on my cv represent my name, Anggun Mutiara Ratnasari. */
+    font-size: 30px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    text-align: center;
+    color: #7a1f1f;
+}
+
+.boxborder h5 {
+	/*This selector is for <h5> Programmer, Editor </h5>. */
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0!important;
+}
+
+.boxborder hr {
+	/*This selector is used for horizontal rule to separate between my name and my job (my dream job). */
+    width: 20%;
+}
+
+.text2 {
+	/*This to declarate div class="boxborder text2", or in the html we can see as Software Skills. */
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #7a1f1f;
+}
+
+.text3 {
+	/*I used .text3 on my CV is for write capacities, languages, interest, contact, description, and education. */
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #7a1f1f;
+}
+
+.text4 {
+	/*I used .text4 on my CV is for write my WhatsApp number and my instagram username. */
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text5 {
+	/*I used .text5 on my CV is for write my email.*/
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	width:auto;
+	height:auto;
+    text-align:justify;
+}
+
+.light-grey,.hover-light-grey:hover{
+	/*This selector is for my <div class="light-grey. Also this selector will be appear in my languages and my software skills that are in html page or my cv. */
+	/*I used hover selector too here. It used for insert a number or alphabet that will appear in my html page. */ 
+    margin-top: 5px;
+    margin-bottom: 7px;
+    color:#000!important;
+    background-color:#f1f1f1!important;
+}
+
+.small{
+	/*This selector is used to show my abilities that counted by number over the maximum scale. I used to show my abilities in my languages and my software skills that I learn about.*/
+    font-size:12px!important;
+    text-align: center;
+}
+
+.round-xlarge{
+	/*This selector is used to show the maximum scale. I used in my languages and my software skills. */
+    border-radius:16px;
+}
+
+.teal,.hover-teal:hover{
+	/*This selector act as differentiator from my languages and my software skills. Teal is for my software skills. */
+    color:#fff!important;
+    background-color:#b63232!important;
+}
+
+.teal2,.hover-teal2:hover{
+	/*This selector act as differentiator from my languages and my software skills. Teal is for my software skills. */
+    color:#fff!important;
+    background-color:#b32071!important;
+}
+
+.box {
+	/* This selector is only for declarate the size of box which is consist of my description, my education, and my achievements. */
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
+
+.pink {
+	/*In <div class="col-m-6 col-6 pink" I insert an image to be a background of my <div class="boxborder text2"> SOFTWARE SKILLS. */
+    /* background-color: #F6CECA; */
+    background-image: url(wall.png);
+    background-size: cover;
+}
+
+.pink2 {
+	/*For pink2 is to make different from <div class="col-m-6 col-6 pink". Because I want to make another background inside in my div class=software skills. Pink2 in my html page is can be seen in editing skills and writing skill. */
+    background-color: #f8aeae;
+}
+
+ol li {
+	/*I used ol and li tags are for ordered list. For example, on my CV I used for write my education. */
+    padding-bottom: 5px;
+}
+
+ul li {
+	/*I used ul and li tags are for unordered list. For example, on my cv I used for write my Software Skills for Ms. Office */
+    padding-bottom: 5px;
+}
